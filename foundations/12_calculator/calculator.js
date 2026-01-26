@@ -21,8 +21,12 @@ const multiply = function(arr) {
   }, 0);
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+  let poweredNum = a;
+	for(let i = 1; i < b; i++) {
+    poweredNum = poweredNum * a;
+  }
+  return poweredNum;
 };
 
 const factorial = function() {
